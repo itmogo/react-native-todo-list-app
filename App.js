@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, FlatList, Alert, TouchableWithoutFeedback, Keyb
 import Header from './component/header';
 import TodoItem from './component/todoItem';
 import AddTodo from './component/addtodo';
-import Sandbox from './component/sandbox';
+//import Sandbox from './component/sandbox';
 import Footer from './component/footer';
 
 
