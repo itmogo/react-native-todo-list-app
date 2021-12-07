@@ -2,10 +2,12 @@ import React from 'react';
 import { createPortal } from 'react-dom';
 import {StyleSheet, Text, View} from 'react-native';
 
+
 export default function Header(){
     return (
-        <View style={styles.header}> 
+        <View style={styles.header}>         
             <Text style={styles.title}>My Todos List</Text>
+                        
         </View>
         )
     }

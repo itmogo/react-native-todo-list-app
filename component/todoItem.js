@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View} from "react-native";
-import { MaterialIcons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons'; 
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 
 export default function TodoItem({ item, pressHandler }) {
@@ -19,14 +20,13 @@ export default function TodoItem({ item, pressHandler }) {
   return ( //added function pressHandler to touchableopacity
     <TouchableOpacity onPress={()=>pressHandler(item.key)}  >
       {/*adding icons in app*/}
-    <View style={styles.items}>
-      <MaterialIcons name='delete' size={18} color='#333' />
+    <View style={styles.items}>     
+    <AntDesign name="pushpin" size={24} color="black" />
       <Text style={styles.itemText}>{item.text}</Text>  
       </View>       
     </TouchableOpacity>
   )
 }
-
 //create stylesheets column
 
 const styles = StyleSheet.create({
@@ -39,10 +39,8 @@ const styles = StyleSheet.create({
         borderStyle:'dashed',
         flexDirection: 'row',
     },
-
     itemText:{
       marginLeft: 10,
     },
-
 
 })
